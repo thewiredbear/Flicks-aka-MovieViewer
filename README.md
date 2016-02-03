@@ -2,6 +2,8 @@
 
 **Movie Viewer** is a movies app using the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
+**NOTE** - Find the main code in the MovieViewer Folder ( Sorry!, GitHub still doesn't make any sense to me )
+
 Time spent: **3** hours spent in total
 
 ## User Stories
