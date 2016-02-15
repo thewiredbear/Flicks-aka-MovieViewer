@@ -16,6 +16,8 @@ class MovieViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     var movies: [NSDictionary]?
     
+    var endpoint: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let refreshControl = UIRefreshControl()
@@ -25,7 +27,7 @@ class MovieViewController: UIViewController, UITableViewDataSource, UITableViewD
         
         
         let apiKey = "a07e22bc18f5cb106bfe4cc1f83ad8ed"
-        let url = NSURL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=\(apiKey)")
+        let url = NSURL(string: "https://api.themoviedb.org/3/movie/\(endpoint)?api_key=\(apiKey)")
         let request = NSURLRequest(
             URL: url!,
             cachePolicy: NSURLRequestCachePolicy.ReloadIgnoringLocalCacheData,
@@ -139,6 +141,7 @@ class MovieViewController: UIViewController, UITableViewDataSource, UITableViewD
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let cell=sender as! UITableViewCell
+        cell.selectionStyle = .Gray
         let indexPath=tableView.indexPathForCell(cell)
         let movie=movies![indexPath!.row]
         
