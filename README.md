@@ -14,6 +14,9 @@ The following **required** functionality is complete:
 - [X] Poster images are loaded using the UIImageView category in the AFNetworking library.
 - [X] User sees a loading state while waiting for the movies API.
 - [X] User can pull to refresh the movie list.
+- [X] Uer can view movie details by tapping on a cell.
+- [X] User can select from Now Playing or Top Rated movies.
+- [X] Selection Cell goes Grey on selection
 
 The following **optional** features are implemented:
 
