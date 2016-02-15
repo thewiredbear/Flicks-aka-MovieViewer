@@ -4,7 +4,7 @@
 
 **NOTE** - Find the main code in the MovieViewer Folder ( Sorry!, GitHub still doesn't make any sense to me )
 
-Time spent: **3** hours spent in total
+Time spent: **6** hours spent in total
 
 ## User Stories
 
